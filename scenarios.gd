@@ -22,12 +22,8 @@ class stage_property:
 	var screen_picture: String # Path to graphics that contain the prompt 
 	var info_text # text for the tip/help drop button
 
-	
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+# To make a scenario create a new script and name it according to the scenario. Each stage requires
+# you to create a new stage property as shown in test_scenario. Then using the stage name you can call the 
+# variables of the stage_property class and fill in the information. Once all the stages are completed create
+# an array based off of the script name and populate the array with the stages in order starting fro mstage 0
+# Once the scenario is compelted
