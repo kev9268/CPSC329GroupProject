@@ -11,8 +11,14 @@ config_version=5
 [application]
 
 config/name="CPSC329GroupProject"
+run/main_scene="res://node.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+StageProperty="*res://scenarios.gd"
+TestScenario="*res://test_scenario.gd"
 
 [rendering]
 

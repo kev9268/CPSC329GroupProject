@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://k7hao8qyf3ae"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_goqg7"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_goqg7")
+
+[node name="Screen" type="Node2D" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="Screen"]
+offset_right = 1150.0
+offset_bottom = 650.0
+
+[node name="TextEdit" type="TextEdit" parent="Screen"]
+offset_left = 401.0
+offset_top = 149.0
+offset_right = 723.0
+offset_bottom = 370.0
+text = "Scenario text goes here"
+
+[node name="MenuButton" type="MenuButton" parent="."]
+offset_left = 80.0
+offset_top = 64.0
+offset_right = 253.0
+offset_bottom = 99.0
+text = "This a a menu button
+"
+switch_on_hover = true
+item_count = 1
+popup/item_0/text = "Hello this popup contains information and tips and hits to help user's make the correct decision"
+popup/item_0/id = 0
+
+[node name="Option1" type="Button" parent="."]
+offset_left = 32.0
+offset_top = 450.0
+offset_right = 320.0
+offset_bottom = 629.0
+text = "Choice 1
+"
+metadata/leads_to = 0
+
+[node name="Option2" type="Button" parent="."]
+offset_left = 831.0
+offset_top = 444.0
+offset_right = 1119.0
+offset_bottom = 623.0
+text = "Choice 3"
+metadata/leads_to = 0
+
+[node name="Option3" type="Button" parent="."]
+offset_left = 432.0
+offset_top = 445.0
+offset_right = 720.0
+offset_bottom = 624.0
+text = "Choice 2
+"
+metadata/leads_to = 0
+
+[connection signal="pressed" from="Option1" to="." method="_on_option_pressed" binds= ["Option1"]]
+[connection signal="pressed" from="Option2" to="." method="_on_option_pressed" binds= ["Option2"]]
+[connection signal="pressed" from="Option3" to="." method="_on_option_pressed" binds= ["Option3"]]
