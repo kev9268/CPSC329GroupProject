@@ -12,6 +12,7 @@ extends Node
 # bring the game the finish scene or the end of the story line
 
 class stage_property:
+	var num_of_buttons: int
 	var stage_text: String #text of the current stage
 	var button1: String #text for the first choice
 	var button1_leads_to: int # Next stage that will be loaded after selecting option 1
@@ -19,6 +20,8 @@ class stage_property:
 	var button2_leads_to: int # Next stage that will be loaded after selecting option 2
 	var button3: String #text for the third choice
 	var button3_leads_to: int # Next stage that will be loaded after selecting option 3
+	var button4: String
+	var button4_leads_to: int
 	var screen_picture: String # Path to graphics that contain the prompt 
 	var info_text # text for the tip/help drop button
 
@@ -26,4 +29,4 @@ class stage_property:
 # you to create a new stage property as shown in test_scenario. Then using the stage name you can call the 
 # variables of the stage_property class and fill in the information. Once all the stages are completed create
 # an array based off of the script name and populate the array with the stages in order starting fro mstage 0
-# Once the scenario is compelted
+# Once the scenario is completed

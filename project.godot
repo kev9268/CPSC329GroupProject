@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="CPSC329GroupProject"
-run/main_scene="res://node.tscn"
+run/main_scene="res://Main.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 StageProperty="*res://scenarios.gd"
 TestScenario="*res://test_scenario.gd"
+MalwareScenario="*res://test_scenario.gd"
 
 [rendering]
 

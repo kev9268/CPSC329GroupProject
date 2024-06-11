@@ -20,6 +20,7 @@ var test_scenario = [stage_0,stage_1]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	stage_0.num_of_buttons = 3
 	stage_0.stage_text = "Hello this is stage 0"
 	stage_0.button1 = "working 1" 
 	stage_0.button2 = "working 2" 
@@ -30,6 +31,7 @@ func _ready():
 	#stage_0.screen_picture = "temp"
 	stage_0.info_text = "hello this is the tip for stage 0"
 	
+	stage_1.num_of_buttons = 2
 	stage_1.stage_text = "hello this is stage 1"
 	stage_1.button1 = "working 4"
 	stage_1.button2 = "working 5" 
