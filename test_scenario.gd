@@ -15,8 +15,9 @@ extends Node
 
 var stage_0 = StageProperty.stage_property.new()
 var stage_1 = StageProperty.stage_property.new()
+var stage_2 = StageProperty.stage_property.new()
 
-var test_scenario = [stage_0,stage_1]
+var test_scenario = [stage_0,stage_1,stage_2]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -35,12 +36,27 @@ func _ready():
 	stage_1.stage_text = "hello this is stage 1"
 	stage_1.button1 = "working 4"
 	stage_1.button2 = "working 5" 
-	stage_1.button3 = "working 6" 
-	stage_1.button1_leads_to = -1 
-	stage_1.button2_leads_to = -1
-	stage_1.button3_leads_to = -1
+	#stage_1.button3 = "working 6" 
+	stage_1.button1_leads_to = 2
+	stage_1.button2_leads_to = 2
+	#stage_1.button3_leads_to = -1
 	#stage_1.screen_picture = "temp"
 	stage_1.info_text = "hello this is the tip for stage 1"
+	
+	stage_2.num_of_buttons = 4
+	stage_2.stage_text = "hello this is stage 3"
+	stage_2.button1 = "working 6"
+	stage_2.button2 = "working 7" 
+	stage_2.button3 = "working 8" 
+	stage_2.button4 = "working 9" 
+	stage_2.button1_leads_to = -1 
+	stage_2.button2_leads_to = -1
+	stage_2.button3_leads_to = -1
+	stage_2.button4_leads_to = -1
+	#stage_1.screen_picture = "temp"
+	stage_2.info_text = "hello this is the tip for stage 2"
+	
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

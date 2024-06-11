@@ -7,6 +7,10 @@ var index = 0
 func _ready():
 	if scenario_chosen == 1:
 		scenario = TestScenario.test_scenario
+	elif scenario_chosen ==2:
+		print("load")
+	elif scenario_chosen ==3:
+		print("load2")
 	loadStage(index)
 		
 func loadStage(current_stage):
