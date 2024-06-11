@@ -16,9 +16,14 @@ extends Node
 var stage_0 = StageProperty.stage_property.new()
 var stage_1 = StageProperty.stage_property.new()
 var stage_2 = StageProperty.stage_property.new()
+var stage_3 = StageProperty.stage_property.new()
+var stage_4 = StageProperty.stage_property.new()
+var stage_5 = StageProperty.stage_property.new()
+var stage_6 = StageProperty.stage_property.new()
+var stage_7 = StageProperty.stage_property.new()
+var stage_8 = StageProperty.stage_property.new()
 
-var test_scenario = [stage_0,stage_1,stage_2]
-
+var test_scenario = [stage_0,stage_1,stage_2,stage_3,stage_4,stage_5]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -30,7 +35,7 @@ func _ready():
 	stage_0.button1_leads_to = 1 
 	stage_0.button2_leads_to = 1 
 	stage_0.button3_leads_to = 1 
-	#stage_0.screen_picture = "res://art/[picturename].jpg"
+	#stage_0.screen_picture = "temp"
 	stage_0.info_text = "hello this is the tip for stage 0"
 	
 	stage_1.num_of_buttons = 2
@@ -57,9 +62,9 @@ func _ready():
 	#stage_1.screen_picture = "temp"
 	stage_2.info_text = "hello this is the tip for stage 2"
 	
+    stage_0.num_of_buttons = 3
+    stage_0.stage_text = "OH little johnny was sent a suspiscious link what do you do?"
+    stage_0.button1 = "click the link"
+    stage_0.button1_leads_to = 
 	
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass

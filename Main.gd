@@ -62,3 +62,4 @@ func _on_option_pressed(button:String):
 		#$Option3.hide()
 		$MenuButton.hide()
 		$Screen/TextEdit.text = "game over gg"
+		#
