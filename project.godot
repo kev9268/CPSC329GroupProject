@@ -25,8 +25,8 @@ MalwareScenario="*res://malware_scenario.gd"
 
 [display]
 
-window/size/viewport_width=1980
-window/size/viewport_height=1500
+window/size/viewport_width=1500
+window/size/viewport_height=900
 
 [rendering]
 

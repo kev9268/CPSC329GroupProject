@@ -52,38 +52,34 @@ func loadStage(current_stage):
 		button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		$GameScreen/HBoxContainer.add_child(button)
 		button.connect("pressed",call.bind(button.get_path()))
-	var i = 0
-	for n in $GameScreen/HBoxContainer.get_children():
+	for n in range(0,stage.num_of_buttons):
 		var label = Label.new()
-		
-		label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		$GameScreen/LabelContainer.add_child(label)
-
+		label.custom_minimum_size = Vector2(373,278)
+		label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		label.size_flags_vertical = Control.SIZE_EXPAND_FILL
+		
 		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 		label.autowrap_mode =TextServer.AUTOWRAP_WORD_SMART
-		if i == 0:
+		if n == 0:
 			label.text = stage.button1
 			#button.set_meta("leads_to",stage.button1_leads_to)
-		elif i ==1:
+		elif n ==1:
 			label.text = stage.button2
 			#button.set_meta("leads_to",stage.button2_leads_to)
-		elif i ==2:
+		elif n ==2:
 			label.text = stage.button3
 			#button.set_meta("leads_to",stage.button3_leads_to)
-		elif i==3:
+		elif n==3:
 			label.text = stage.button4
 			#button.set_meta("leads_to",stage.button4_leads_to)
-		i+=1
-		label.add_theme_font_size_override("normal",30)
-		label.add_theme_color_override("font_color",Color(1, 0, 0))
-		label.top_level = true
-	
-		
-		
-		
-		
 
+		#label.add_theme_font_size_override("normal",30)
+		label.add_theme_color_override("font_color",Color(1, 0, 0))
+		
+		#label.top_level = true
+	
 	$GameScreen/VBoxContainer/RichTextLabel.text = stage.stage_text
 	$GameScreen/VBoxContainer/MenuButton.get_popup().clear()
 	if stage.info_text != null :
@@ -94,6 +90,7 @@ func loadStage(current_stage):
 		$GameScreen/VBoxContainer/MenuButton.hide()
 	if stage.screen_picture != null :
 		$GameScreen/VBoxContainer/TextureRect.texture = load(stage.screen_picture)
+		#$GameScreen/VBoxContainer/TextureRect.set_expand_mode("TextureRect.EXPAND_IGNORE_SIZE")
 	
 
 ## Called every frame. 'delta' is the elapsed time since the previous frame.
