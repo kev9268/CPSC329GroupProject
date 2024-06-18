@@ -19,7 +19,14 @@ config/icon="res://icon.svg"
 
 StageProperty="*res://scenarios.gd"
 TestScenario="*res://test_scenario.gd"
-MalwareScenario="*res://test_scenario.gd"
+PhishingScenario="*res://phishing_scenario.gd"
+SocialScenario="*res://social_engineering_scenario.gd"
+MalwareScenario="*res://malware_scenario.gd"
+
+[display]
+
+window/size/viewport_width=1980
+window/size/viewport_height=1500
 
 [rendering]
 

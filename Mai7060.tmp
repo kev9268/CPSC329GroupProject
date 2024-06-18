@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://k7hao8qyf3ae"]
+[gd_scene load_steps=3 format=3 uid="uid://k7hao8qyf3ae"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_4jnuj"]
+[ext_resource type="Texture2D" uid="uid://bdle2fybb8tk1" path="res://art/phishing1.jpeg" id="2_nxboe"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_4jnuj")
@@ -10,13 +11,6 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-
-[node name="LabelContainer" type="HBoxContainer" parent="GameScreen"]
-layout_mode = 0
-offset_left = 8.0
-offset_top = 1152.0
-offset_right = 1992.0
-offset_bottom = 1496.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="GameScreen"]
 layout_mode = 0
@@ -32,17 +26,6 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="Label" type="Label" parent="GameScreen/HBoxContainer/Button"]
-layout_mode = 0
-offset_right = 1960.0
-offset_bottom = 360.0
-theme_override_font_sizes/font_size = 30
-text = "Button1
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
-
-[node name="Label2" type="Label" parent="GameScreen/HBoxContainer/Button"]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
@@ -62,17 +45,27 @@ bbcode_enabled = true
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
-size_flags_stretch_ratio = 0.1
+size_flags_stretch_ratio = 0.55
 button_pressed = true
 text = "Tips/Hints
 "
 switch_on_hover = true
 
-[node name="TextureRect" type="TextureRect" parent="GameScreen/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="GameScreen/VBoxContainer"]
 layout_mode = 2
-size_flags_stretch_ratio = 2.5
+size_flags_vertical = 3
+size_flags_stretch_ratio = 4.5
+
+[node name="TextureRect" type="TextureRect" parent="GameScreen/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 4.0
+texture = ExtResource("2_nxboe")
+stretch_mode = 5
 
 [node name="StartMenu" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -135,13 +128,14 @@ offset_bottom = 40.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="StartMenu/Start"]
 layout_mode = 0
-offset_left = 208.0
-offset_right = 1792.0
-offset_bottom = 928.0
+offset_left = 224.0
+offset_top = 112.0
+offset_right = 1808.0
+offset_bottom = 1040.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 200
+theme_override_font_sizes/normal_font_size = 250
 bbcode_enabled = true
-text = "[center]SMP: A Simulation Game[/center]"
+text = "[center]CPSC329 Project[/center]"
 
 [node name="CreditsButton" type="Button" parent="StartMenu/Start"]
 layout_mode = 0

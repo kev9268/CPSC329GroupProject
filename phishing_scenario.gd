@@ -65,7 +65,7 @@ func _ready():
 	#stage_3.screen_picture = "temp"
 	#stage_3.info_text = "hello this is the tip for stage 2"
 
-  stage_4.num_of_buttons = 3
+	stage_4.num_of_buttons = 3
 	stage_4.stage_text = "You logged into your account and then it brings you to a page that says “Thank you for logging in and your account has been verified”. You find that kind of weird and thankfully you took an introductory course on privacy and security in university so you start feeling like there is something fishy going on here."
 	stage_4.button1 = "Contact Amazon to see if this was a phishing scam"
 	stage_4.button2 = "Go to amazon.ca and change your password and credit cards" 
@@ -76,7 +76,7 @@ func _ready():
 	#stage_4.screen_picture = "temp"
 	#stage_4.info_text = "hello this is the tip for stage 2"
 
-  stage_5.num_of_buttons = 2
+	stage_5.num_of_buttons = 2
 	stage_5.stage_text = "After finally finishing your work today, you get home and go to amazon.ca to login. You cannot login and you realized maybe your account has been compromised so you contact Amazon customer service but they are closed for the day. Your mom does not get her birthday gift :(."
 	stage_5.button1 = "Go to credits/source"
 	stage_5.button2 = "End Game"
@@ -85,9 +85,9 @@ func _ready():
 	#stage_5.screen_picture = "temp"
 	#stage_5.info_text = "hello this is the tip for stage 2"
 
-  stage_6.num_of_buttons = 2
+	stage_6.num_of_buttons = 2
 	stage_6.stage_text = "Nice! After finally finishing your work today, you get home and go to amazon.ca to login. You login just fine and realize you had just avoided some phishy business today and in a breath of relief you order your gift for your mom and she receives it the next day :)"
-  stage_6.button1 = "Go to credits/source"
+	stage_6.button1 = "Go to credits/source"
 	stage_6.button2 = "End Game"
 	stage_6.button1_leads_to = -1
 	stage_6.button2_leads_to = -1
